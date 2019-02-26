@@ -1,21 +1,18 @@
 {
-  "name": "trampos",
+  "name": "objetiva_treinamentos",
   "version": "1.0.0",
-  "description": "",
+  "description": "website",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/CahKitty/trampos.git"
-  },
+  "repository": "git+https://github.com/CahKitty/objetiva_treinamentos.git",
   "author": "Carla Annunciato",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/CahKitty/trampos/issues"
+    "url": "https://github.com/CahKitty/objetiva_treinamentos/issues"
   },
-  "homepage": "https://github.com/CahKitty/trampos#readme",
+  "homepage": "https://github.com/CahKitty/objetiva_treinamentos#readme",
   "devDependencies": {
     "gulp": "^3.9.1"
   }
