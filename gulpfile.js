@@ -3,12 +3,12 @@ var gulp = require('gulp'),
     browserSync = require('browser-sync'),
     autoprefixer = require('gulp-autoprefixer'),
     uglify = require('gulp-uglify'),
+    jshint = require('gulp-jshint'),
     header  = require('gulp-header'),
     rename = require('gulp-rename'),
     cssnano = require('gulp-cssnano'),
+    plumber = require('gulp-plumber'),
     package = require('./package.json');
-    plumber = require('gulp-plumber');
-    concat = require('gulp-concat');
 
 
 var banner = [
@@ -26,10 +26,7 @@ var banner = [
 gulp.task('css', function () {
     return gulp.src('src/scss/styles.scss')
     .pipe(plumber())
-    .pipe(sass({
-        errLogToConsole: true,
-        includePaths: [ 'src/styles/scss/' ],
-    }))
+    .pipe(sass({errLogToConsole: true}))
     .pipe(autoprefixer('last 4 version'))
     .pipe(gulp.dest('app/assets/css'))
     .pipe(cssnano())
@@ -40,9 +37,10 @@ gulp.task('css', function () {
 });
 
 gulp.task('js',function(){
-  gulp.src('src/js/**/*.js')
+  gulp.src('src/js/scripts.js')
     .pipe(plumber())
-    .pipe(concat('scripts.js'))
+    .pipe(jshint('.jshintrc'))
+    .pipe(jshint.reporter('default'))
     .pipe(header(banner, { package : package }))
     .pipe(gulp.dest('app/assets/js'))
     .pipe(uglify())
@@ -55,7 +53,7 @@ gulp.task('js',function(){
 gulp.task('browser-sync', function() {
     browserSync.init(null, {
         server: {
-            baseDir: "app"
+            baseDir: 'app'
         }
     });
 });
@@ -63,22 +61,8 @@ gulp.task('bs-reload', function () {
     browserSync.reload();
 });
 
-// gulp.task("default", function () {
-//     gulp.start("serve");
-//   });
-
-var gulp = require('gulp');
-var browserSync = require('browser-sync').create();
-
-gulp.task('sync', function() {
- browserSync.init({
- proxy: "my_project.dev",
- files: "*.css,*.php,css/*css"
-});
-});
-
 gulp.task('default', ['css', 'js', 'browser-sync'], function () {
-    gulp.watch("src/scss/**", ['css']);
-    gulp.watch("src/js/*.js", ['js']);
-    gulp.watch("app/*.html", ['bs-reload']);
+    gulp.watch('src/scss/*/*.scss', ['css']);
+    gulp.watch('src/js/*.js', ['js']);
+    gulp.watch('app/*.html', ['bs-reload']);
 });

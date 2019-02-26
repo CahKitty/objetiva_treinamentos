@@ -1,0 +1,202 @@
+html {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, dialog, figure, footer, header, hgroup, nav, section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  vertical-align: baseline; }
+
+body, div, span, object, iframe,
+p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, dialog, figure, footer, header, hgroup, nav, section {
+  font-size: 100%; }
+
+article, aside, dialog, figure, footer, header, hgroup, nav, section {
+  display: block; }
+
+body {
+  line-height: 1.5;
+  background: white; }
+
+table {
+  border-collapse: separate;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  float: none !important; }
+
+table, th, td {
+  vertical-align: middle; }
+
+blockquote before,
+blockquote after,
+q before,
+q after {
+  content: ''; }
+
+a img {
+  border: none; }
+
+b, i {
+  display: none; }
+
+html, body {
+  font-family: "Open Sans", Helvetica, sans-serif; }
+
+body {
+  min-height: 100vh;
+  background-color: #f1f1f1; }
+  body .margin {
+    margin: 20px !important; }
+  body .tMargin {
+    margin-top: 20px !important; }
+  body .lMargin {
+    margin-left: 20px !important; }
+  body .bMargin {
+    margin-bottom: 20px !important; }
+  body .rMargin {
+    margin-right: 20px !important; }
+  body .noMargin {
+    margin: 0 !important; }
+  body .noTMargin {
+    margin-top: 0 !important; }
+  body .noLMargin {
+    margin-left: 0 !important; }
+  body .noBMargin {
+    margin-bottom: 0 !important; }
+  body .noRMargin {
+    margin-right: 0 !important; }
+  body .padding {
+    padding: 20px !important; }
+  body .tPadding {
+    padding-top: 20px !important; }
+  body .lPadding {
+    padding-left: 20px !important; }
+  body .bPadding {
+    padding-bottom: 20px !important; }
+  body .rPadding {
+    padding-right: 20px !important; }
+  body .noPadding {
+    padding: 0 !important; }
+  body .noTPadding {
+    padding-top: 0 !important; }
+  body .noLPadding {
+    padding-left: 0 !important; }
+  body .noBPadding {
+    padding-bottom: 0 !important; }
+  body .noRPadding {
+    padding-right: 0 !important; }
+  body .text-left {
+    text-align: left !important; }
+  body .text-right {
+    text-align: right !important; }
+  body .text-center {
+    text-align: center !important; }
+  body .text-justify {
+    text-align: justify !important; }
+  body .lFloat {
+    float: left !important; }
+  body .rFloat {
+    float: right !important; }
+  body .w10 {
+    width: 10%; }
+  body .w20 {
+    width: 20%; }
+  body .w30 {
+    width: 30%; }
+  body .w40 {
+    width: 40%; }
+  body .w50 {
+    width: 50%; }
+  body .w60 {
+    width: 60%; }
+  body .w70 {
+    width: 70%; }
+  body .w80 {
+    width: 80%; }
+  body .w90 {
+    width: 90%; }
+  body .w100 {
+    width: 100%; }
+
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: table; }
+
+.fullWidth {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: unset; }
+
+p {
+  font-size: 12px;
+  color: #54585a;
+  font-weight: 300;
+  overflow-wrap: break-word; }
+
+h1, h2, h3, h4 {
+  margin-bottom: 20px;
+  font-weight: 300;
+  color: #54585a;
+  line-height: 150%; }
+
+h2 {
+  font-size: 26px;
+  font-weight: 300; }
+
+h3 {
+  font-size: 18px; }
+
+ul > li {
+  list-style: none;
+  display: inline-block; }
+
+.color-success {
+  color: #8BC34A; }
+
+.color-info {
+  color: #2196F3; }
+
+.color-warning {
+  color: #FFC107; }
+
+.color-error {
+  color: #F44336; }
+
+.logo {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(#135D99));
+  background: -webkit-linear-gradient(white, #135D99);
+  background: -o-linear-gradient(white, #135D99);
+  background: linear-gradient(white, #135D99); }
+  .logo h1 {
+    color: #fff; }

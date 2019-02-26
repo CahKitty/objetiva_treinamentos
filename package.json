@@ -1,30 +1,26 @@
 {
-  "name": "objetiva_treinamentos",
+  "name": "boilerplate",
+  "title": "Boilerplate Front-end",
+  "description": "Boilerplate project",
+  "author": "Michel Makei Gefuni",
+  "url": "https://github.com/michelgefuni/frontend-boilerplate",
   "version": "1.0.0",
-  "description": "website",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": "git+https://github.com/CahKitty/objetiva_treinamentos.git",
-  "author": "Carla Annunciato",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/CahKitty/objetiva_treinamentos/issues"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/michelgefuni/frontend-boilerplate"
   },
-  "homepage": "https://github.com/CahKitty/objetiva_treinamentos#readme",
   "devDependencies": {
-    "gulp": "^3.9.1"
-  },
-  "dependencies": {
     "browser-sync": "^2.26.3",
+    "gulp": "^3.9.1",
     "gulp-autoprefixer": "^6.0.0",
-    "gulp-concat": "^2.6.1",
     "gulp-cssnano": "^2.1.3",
     "gulp-header": "^2.0.7",
+    "gulp-jshint": "^2.1.0",
     "gulp-plumber": "^1.2.1",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
-    "gulp-uglify": "^3.0.1"
+    "gulp-uglify": "^3.0.1",
+    "jshint": "^2.9.7"
   }
 }
