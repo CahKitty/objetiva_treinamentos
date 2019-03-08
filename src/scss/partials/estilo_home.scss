@@ -1,0 +1,23 @@
+header{
+    width: 100vw;
+    height: 100vh;
+    background-color: blueviolet;
+    color: $white-brand;
+}
+
+nav{
+  background-color: transparent;
+
+}
+
+.chamada{
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: $white-brand;
+  text-align: center;
+}
