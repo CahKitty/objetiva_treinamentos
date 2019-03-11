@@ -11,7 +11,7 @@ nav{
 }
 
 .chamada{
-  width: 500px;
+  // width: 100vh;
   margin: 0 auto;
   margin-top: 30vh;
   display: flex;
@@ -20,4 +20,27 @@ nav{
   flex-direction: column;
   color: $white-brand;
   text-align: center;
+}
+
+.container{
+  margin: 0 auto;
+}
+
+.missoes{
+  margin-top: 150px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+
+  h2{
+    color: $sub-title;
+  }
+}
+
+.video_e_data{
+  display: flex;
+  justify-content: center;
+
+
 }

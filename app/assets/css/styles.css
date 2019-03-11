@@ -2636,6 +2636,12 @@ td, th {
 .no-padding {
   padding: 0 !important; }
 
+/* This is needed for some mobile phones to display the Google Icon font properly */
+.material-icons {
+  text-rendering: optimizeLegibility;
+  -webkit-font-feature-settings: 'liga';
+          font-feature-settings: 'liga'; }
+
 .container {
   margin: 0 auto;
   max-width: 1280px;
@@ -3980,6 +3986,12 @@ button.btn-floating {
   .carousel .carousel-item:not(.active) .materialboxed {
     pointer-events: none; }
 
+/* This is needed for some mobile phones to display the Google Icon font properly */
+.material-icons {
+  text-rendering: optimizeLegibility;
+  -webkit-font-feature-settings: 'liga';
+          font-feature-settings: 'liga'; }
+
 html, body {
   font-family: "Open Sans", Helvetica, sans-serif; }
 
@@ -4113,7 +4125,6 @@ nav {
   background-color: transparent; }
 
 .chamada {
-  width: 500px;
   margin: 0 auto;
   margin-top: 30vh;
   display: -webkit-box;
@@ -4131,3 +4142,28 @@ nav {
           flex-direction: column;
   color: #FFF;
   text-align: center; }
+
+.container {
+  margin: 0 auto; }
+
+.missoes {
+  margin-top: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .missoes h2 {
+    color: #38DAA5; }
+
+.video_e_data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
