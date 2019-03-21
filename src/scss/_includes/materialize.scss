@@ -12,13 +12,13 @@
 
 // components
 @import "components/global";
-//@import "components/badges";
+@import "components/badges";
 @import "components/icons-material-design";
 @import "components/grid";
 @import "components/navbar";
 @import "components/typography";
 //@import "components/transitions";
-//@import "components/cards";
+@import "components/cards";
 //@import "components/toast";
 //@import "components/tabs";
 //@import "components/tooltip";
@@ -29,11 +29,11 @@
 //@import "components/collapsible";
 //@import "components/chips";
 //@import "components/materialbox";
-//@import "components/forms/forms";
-//@import "components/table_of_contents";
+@import "components/forms/forms";
+@import "components/table_of_contents";
 //@import "components/sidenav";
 //@import "components/preloader";
-//@import "components/slider";
+@import "components/slider";
 @import "components/carousel";
 //@import "components/tapTarget";
 //@import "components/pulse";

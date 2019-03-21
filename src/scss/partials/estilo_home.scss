@@ -1,9 +1,54 @@
-header{
+.capa{
     width: 100vw;
     height: 100vh;
-    background-color: blueviolet;
+    background-image: url("../img/capa_desktop.png");
+    background-repeat: no-repeat;
     color: $white-brand;
 }
+
+.cursos{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../img/capa_desktop.png");
+    background-repeat: no-repeat;
+    color: $white-brand;
+
+    .desperte_box{
+      background-color: yellow;
+    }
+}
+
+.outros{
+  width: 100vw;
+  background-color: #28228C;
+  color: $white-brand;
+}
+
+
+
+form{
+background-color: #ffffff;
+
+
+}
+
+
+
+
+
+.sobre, .palestras{
+  width: 100vw;
+  height: 100vh;
+  color: $white-brand;
+}
+
+.palestras{
+  .card-content{
+    color:$gray-brand;
+  }
+}
+
+
 
 nav{
   background-color: transparent;
@@ -26,11 +71,31 @@ nav{
   margin: 0 auto;
 }
 
-.missoes{
-  margin-top: 150px;
+.empresa{
+  width: 100vw;
+  height:60vh;
+  background-image: url("../img/foto_oficial_capa_desktop.png");
+  background-repeat: no-repeat;
+  margin-bottom: -130px;
+  // text-align: center;
+
+  .empresa_texto{
+    color:$gray-brand;
+}
+}
+
+.missoes_box{
+  margin-top: 100px;
+  width: 100vw;
+  height: 40vh;
+  background-color: #28228C;
+  color: $light-gray;
+}
+.missoes_texto{
  display: flex;
  justify-content: center;
  align-items: center;
+//  background-color: #28228C;
 
 
   h2{
@@ -38,9 +103,3 @@ nav{
   }
 }
 
-.video_e_data{
-  display: flex;
-  justify-content: center;
-
-
-}
